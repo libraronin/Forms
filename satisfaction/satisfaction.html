@@ -3,7 +3,7 @@
 <head>
 
 <title>
-Untitled Form
+Satisfaction Survey
 </title>
 
 <!-- Meta Tags -->
@@ -14,17 +14,63 @@ Untitled Form
 <!-- CSS -->
 <link href="css/structure.css" rel="stylesheet">
 <link href="css/form.css" rel="stylesheet">
+<style type="text/css">
+body {background-color:#c60;}
+#f11, #f12,#f13,#f14,#f15 {
+  display: inline-block;
+  background-color: #f7f7f7;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#e7e7e7));
+  background-image: -webkit-linear-gradient(top, #f7f7f7, #e7e7e7); 
+  background-image: -moz-linear-gradient(top, #f7f7f7, #e7e7e7); 
+  background-image: -ms-linear-gradient(top, #f7f7f7, #e7e7e7); 
+  background-image: -o-linear-gradient(top, #f7f7f7, #e7e7e7); 
+  color: #000;
+  margin: 36px;
+  width: 144px;
+  height: 144px;
+  position: relative;
+  text-align: center;
+  line-height: 144px;
+  border-radius: 50%;
+  box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
+}
+textarea {
+	border: 2px solid #765942;
+	border-radius: 10px;
+	height: 60px;
+	width: 230px;
+}
+h2 {color:#fff;}
+.button {
+	width: 500px;
+	height: 75px;
+	margin: 25px;
+	padding: 5px 10px;
+	background: #2664cf;
+	font-family: Arial, sans-serif;
+	color: #ffffff;
+	text-align: center;
+	cursor: pointer
+	}
+.button {
+	border: 1px solid #4cadfc;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px
+	}
+.button {
+	background: -webkit-gradient(linear, left top, left bottom, from(#0a8ffe), to(#2b5cc6));
+	background: -moz-linear-gradient(top, #0a8ffe, #2b5cc6);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0a8ffe', endColorstr='#2b5cc6')
+	}
+</style>
 
-<!-- JavaScript -->
-<script src="scripts/wufoo.js"></script>
 
-<!--[if lt IE 10]>
-<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+
 </head>
 
 <body id="public">
-<div id="container" class="ltr">
+
 
 <form id="form321" name="form321" class="wufoo topLabel page" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
 action="https://buffalostate.wufoo.com/forms/q6x7k7/#public">
@@ -33,75 +79,39 @@ action="https://buffalostate.wufoo.com/forms/q6x7k7/#public">
 <h2>Rate Our Service</h2>
 </header>
 
-<ul>
+<label id="f11" for="Field1_1"><input id="Field1_1" name="Field1" type="radio" tabindex="1" value="Very Unsatisfied" /> Very Unsatisfied</label>
 
-<li id="foli1" class="likert notranslate 
-col5
- ">
-<table cellspacing="0">
-<caption id="title1">
-Evaluate the following statements.
-</caption>
-<thead>
-<tr>
-<th>&nbsp;</th>
-<td >Very Unsatisfied</td>
-<td >Unsatisfied</td>
-<td >Neutral</td>
-<td >Satisfied</td>
-<td >Very Satisfied</td>
-</tr>
-</thead>
-<tbody>
-<tr class="statement1">
-<th><label for="Field1">How did we do?</label></th>
-<td title="Very Unsatisfied">
-<input id="Field1_1" name="Field1" type="radio" tabindex="1" value="Very Unsatisfied" />
-<label for="Field1_1">1</label>
-</td>
-<td title="Unsatisfied">
-<input id="Field1_2" name="Field1" type="radio" tabindex="2" value="Unsatisfied" />
-<label for="Field1_2">2</label>
-</td>
-<td title="Neutral">
-<input id="Field1_3" name="Field1" type="radio" tabindex="3" value="Neutral" />
-<label for="Field1_3">3</label>
-</td>
-<td title="Satisfied">
-<input id="Field1_4" name="Field1" type="radio" tabindex="4" value="Satisfied" />
-<label for="Field1_4">4</label>
-</td>
-<td title="Very Satisfied">
-<input id="Field1_5" name="Field1" type="radio" tabindex="5" value="Very Satisfied" />
-<label for="Field1_5">5</label>
-</td>
-</tr>
-</tbody>
-</table>
-</li>
+<label id="f12" for="Field1_2"><input id="Field1_2" name="Field1" type="radio" tabindex="2" value="Unsatisfied" /> Unsatisfied</label>
 
- <li class="buttons ">
-<div>
+<label id="f13" for="Field1_3"><input id="Field1_3" name="Field1" type="radio" tabindex="3" value="Neutral" /> Neutral</label>
 
-                    <input id="saveForm" name="saveForm" class="btTxt submit" 
-    type="submit" value="Submit"
- /></div>
-</li>
+<label id="f14" for="Field1_4"><input id="Field1_4" name="Field1" type="radio" tabindex="4" value="Satisfied" /> Satisfied</label>
 
-<li class="hide">
+<label id="f15" for="Field1_5"><input id="Field1_5" name="Field1" type="radio" tabindex="5" value="Very Satisfied" /> Very Satisfied</label>
+
+
+<label class="desc" id="title102" for="Field102">
+<h2>Questions or Comments</h2>
+</label>
+<textarea id="Field102" 
+name="Field102" 
+class="field textarea medium" 
+spellcheck="true" 
+rows="10" cols="50" 
+tabindex="6" 
+onkeyup=""
+ ></textarea>
+
+<input id="saveForm" name="saveForm" class="button" type="submit" value="Submit" />
+
+<span class="hide">
 <label for="comment">Do Not Fill This Out</label>
 <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
 <input type="hidden" id="idstamp" name="idstamp" value="HXCmkM0SQrx6DmLAvGFedd3JehYQymDqxOzhWqpFEmo=" />
-</li>
-</ul>
+</span>
 </form> 
 
-</div><!--container-->
 
-<a class="powertiny" href="http://wufoo.com/form-builder/" title="Powered by Wufoo"
-style="display:block !important;visibility:visible !important;text-indent:0 !important;position:relative !important;height:auto !important;width:95px !important;overflow:visible !important;text-decoration:none;cursor:pointer !important;margin:0 auto !important">
-<span style="background:url(./images/powerlogo.png) no-repeat center 7px; margin:0 auto;display:inline-block !important;visibility:visible !important;text-indent:-9000px !important;position:static !important;overflow: auto !important;width:62px !important;height:30px !important">Wufoo</span>
-<b style="display:block !important;visibility:visible !important;text-indent:0 !important;position:static !important;height:auto !important;width:auto !important;overflow: auto !important;font-weight:normal;font-size:9px;color:#777;padding:0 0 0 3px;">Designed</b>
-</a>
+
 </body>
 </html>
